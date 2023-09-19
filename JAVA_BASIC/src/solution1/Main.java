@@ -4,8 +4,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Q1 q = new Q1();
-		System.out.println(q.solution(1, 23));
+		Q3 q = new Q3();
+		System.out.println(q.solution("Program29b8UYP", "merS123", 7));
 		
 	}
 
