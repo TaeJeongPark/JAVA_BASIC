@@ -34,14 +34,19 @@ public class Calculator2 {
 		double num2 = sc.nextDouble();
 		double result = 0;
 		
-		if(op.equals("+")) {
+		switch(op) {
+		case "+":
 			result = sum(num1, num2);
-		} else if(op.equals("-")) {
+			break;
+		case "-":
 			result = subtraction(num1, num2);
-		} else if(op.equals("*")) {
+			break;
+		case "*":
 			result = multiply(num1, num2);
-		} else if(op.equals("/")) {
+			break;
+		case "/":
 			result = divide(num1, num2);
+			break;
 		}
 		
 		System.out.println(num1 + " " + op + " " + num2 + " = " + result);
