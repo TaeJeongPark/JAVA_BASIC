@@ -24,4 +24,9 @@ public class Student {
 		System.out.println("학년 : " + grade);
 	}
 	
+	// 오버라이딩 연습
+	public String transformBirth() {
+		return birth + "";
+	}
+	
 }

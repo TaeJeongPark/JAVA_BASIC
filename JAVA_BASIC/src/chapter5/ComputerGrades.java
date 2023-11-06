@@ -22,4 +22,10 @@ public class ComputerGrades extends Student {
 		System.out.println("android : " + android);
 	}
 	
+	// 오버라이딩 연습
+	public String transformBirth() {
+		String str = birth + "";
+		return str.substring(0, 4) + "년 " + str.substring(4, 6) + "월 " + str.substring(6) + "일";
+	}
+	
 }
