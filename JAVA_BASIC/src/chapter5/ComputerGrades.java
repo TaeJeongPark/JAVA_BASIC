@@ -1,6 +1,6 @@
 package chapter5;
 
-public class ComputerGrades extends Student {
+public class ComputerGrades extends Student implements ProfessorInterface {
 
 	String java;		// 자바 성적
 	String c;			// C 성적
@@ -27,5 +27,17 @@ public class ComputerGrades extends Student {
 		String str = birth + "";
 		return str.substring(0, 4) + "년 " + str.substring(4, 6) + "월 " + str.substring(6) + "일";
 	}
+
+	// 인터페이스 연습
+	@Override
+	public void getName() {
+		System.out.println("김기태");
+	}
+
+	@Override
+	public void getCode() {
+		System.out.println("201512345");
+	}
+	
 	
 }
